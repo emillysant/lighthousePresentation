@@ -88,3 +88,35 @@ You can use any language you like, but keep in mind that we will have to run you
 You are free to use opensource libs and frameworks, but also keep in mind that **you have to write code**. Point and click tools are not allowed.
 
 Thank you for participating!
+
+
+### Passo a passo da criação do projeto
+#### 1 - Criando um ambiente virtual no windows:
+
+<ol>
+  <li>Na pasta do projeto, digite no terminal: python -m venv venv</li>
+  <li>Ativando a venv: venv\Scripts\activate</li>
+  <li>Verificando se está com a ultima versão do pip: python -m pip install --upgrade pip</li>
+</ol>
+
+#### 2 - Instalando as bibliotecas
+
+<ol>
+    <li>Instalação do Pandas: pip install pandas</li>
+    <li>Criação do gitignore e adicionando a venv nele</li>
+    <li>Estabelecendo conexão com postgres: pip install psycopg2</li>
+    <li>Instalnndo lib para salvar as chaves da conexão com banco: pip install python-dotenv</li>
+    <li>Estabelecendo conexão com banco MySQL: pip install sqlalchemy</li>
+    <li>Estabelecendo conexão com banco MySQL: pip install mysql-connector-python</li>
+    <li>Salvando as versoes usadas: pip freeze > requirements.txt</li>
+</ol>
+
+
+#### 3 - Acessando o banco
+
+Executando o comando docker-compose up no ambiente Linux podemos criar uma imagem docker de um banco de dados Postgres. 
+
+#### 4 - Executando o projeto
+
+python main.py
+# Engenheiro-de-Dados--pipeline
